@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Seedhe Maut</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .checkout-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        .checkout-form {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        input {
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            color: white;
+            outline: none;
+            transition: var(--transition-smooth);
+        }
+
+        input:focus {
+            border-color: var(--primary-red);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        label {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-gray);
+        }
+
+        .payment-methods {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .payment-card {
+            flex: 1;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: none;
+            text-align: center;
+            transition: var(--transition-smooth);
+        }
+
+        .payment-card.active {
+            border-color: var(--primary-red);
+            background: rgba(217, 29, 28, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+    <div class="bg-glow"></div>
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html" class="interactable">
+                        <img src="/Assets/Prmary Logos Black Red/Artboard 7SM logos.png" alt="SM Logo"
+                            style="height: 50px;">
+                    </a>
+                </div>
+                <div class="nav-right">
+                    <a href="cart.html" class="icon-btn interactable"><i class="fa-solid fa-arrow-left"></i> Back to
+                        Cart</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="reveal active" style="padding-top: 150px;">
+        <div class="container">
+            <h1 class="maut-font" style="font-size: 48px;">Checkout</h1>
+            <div class="checkout-grid">
+                <div class="checkout-form glass-card" style="padding: 40px;">
+                    <h2 class="maut-font" style="font-size: 24px;">Shipping Information</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" placeholder="John" class="interactable">
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Doe" class="interactable">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="john@example.com" class="interactable">
+                    </div>
+                    <div class="form-group">
+                        <label>Shipping Address</label>
+                        <input type="text" placeholder="123 Street, Delhi" class="interactable">
+                    </div>
+
+                    <h2 class="maut-font" style="font-size: 24px; margin-top: 30px;">Payment</h2>
+                    <div class="payment-methods">
+                        <div class="payment-card active interactable">
+                            <i class="fa-solid fa-credit-card"></i><br>Card
+                        </div>
+                        <div class="payment-card interactable">
+                            <i class="fa-solid fa-mobile-screen"></i><br>UPI
+                        </div>
+                        <div class="payment-card interactable">
+                            <i class="fa-solid fa-building-columns"></i><br>Net Banking
+                        </div>
+                    </div>
+                    <button class="checkout-btn complete-order interactable" style="margin-top: 40px;">Complete
+                        Order</button>
+                </div>
+
+                <div class="checkout-summary glass-card" style="padding: 40px; height: fit-content;">
+                    <h2 class="maut-font" style="font-size: 24px;">Order Summary</h2>
+                    <div id="checkout-items-list">
+                        <!-- Items will be injected -->
+                    </div>
+                    <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 20px 0;">
+                    <div class="summary-line total">
+                        <span>Grand Total</span>
+                        <span id="checkout-total">₹0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="social-links">
+                    <a href="https://open.spotify.com/artist/2oBG74gAocPMFv6Ij9ykdo" target="_blank"
+                        class="interactable"><i class="fa-brands fa-spotify"></i></a>
+                    <a href="https://www.instagram.com/seedhemaut/" target="_blank" class="interactable"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@SeedheMaut" target="_blank" class="interactable"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://m.facebook.com/SeedheMaut/" target="_blank" class="interactable"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/SeedheMaut" target="_blank" class="interactable"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://on.soundcloud.com/Hy07s4dzb5fO7LDIjN" target="_blank" class="interactable"><i
+                            class="fa-brands fa-soundcloud"></i></a>
+                </div>
+                <p>&copy; 2024 Seedhe Maut. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Auth Modal -->
+        <div id="auth-modal" class="modal">
+            <div class="modal-content glass">
+                <span class="close-modal interactable">&times;</span>
+                <h2 class="maut-font">Join the Vault</h2>
+                <p>Access exclusive drops and early ticket access</p>
+                <div class="auth-buttons">
+                    <button class="auth-btn discord-btn interactable">
+                        <i class="fa-brands fa-discord"></i>
+                        <span>Connect with Discord</span>
+                    </button>
+                    <button class="auth-btn google-btn interactable">
+                        <i class="fa-brands fa-google"></i>
+                        <span>Continue with Google</span>
+                    </button>
+                    <button class="auth-btn spotify-btn interactable">
+                        <i class="fa-brands fa-spotify"></i>
+                        <span>Sync with Spotify</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="/main.js"></script>
+</body>
+
+</html>

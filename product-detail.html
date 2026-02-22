@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | Seedhe Maut</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .product-detail-container {
+            margin-top: 150px;
+            padding-bottom: 100px;
+        }
+
+        .product-flex {
+            display: flex;
+            gap: 80px;
+            align-items: flex-start;
+        }
+
+        .product-gallery {
+            flex: 1;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .detail-card {
+            background: rgba(10, 10, 10, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 40px;
+            border-radius: 40px;
+        }
+
+        .product-main-img {
+            width: 100%;
+            border-radius: 30px;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8);
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .product-main-img:hover {
+            transform: scale(1.02);
+        }
+
+        .product-price {
+            font-size: 32px;
+            color: var(--primary-red);
+            margin: 20px 0;
+            font-weight: 800;
+        }
+
+        .product-description {
+            color: var(--text-gray);
+            line-height: 1.8;
+            font-size: 18px;
+            margin: 30px 0;
+        }
+
+        .add-to-cart-btn {
+            width: 100%;
+            padding: 20px;
+            background: var(--primary-red);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .add-to-cart-btn:hover {
+            background: white;
+            color: black;
+            transform: translateY(-5px);
+        }
+
+        .breadcrumb {
+            margin-bottom: 40px;
+            color: var(--text-gray);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .breadcrumb a {
+            color: var(--text-white);
+            text-decoration: none;
+        }
+
+        @media (max-width: 992px) {
+            .product-flex {
+                flex-direction: column;
+                gap: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+    <div class="bg-glow"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="glitch-logo">
+                <img src="Assets/Prmary Logos Black Red/Artboard 7SM logos.png" alt="SM Logo" class="loader-logo">
+            </div>
+            <div class="loader-progress-bar">
+                <div class="loader-progress-fill"></div>
+            </div>
+            <div class="loader-text maut-font">BLOODLINE SYNCING...</div>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html" class="interactable">
+                        <img src="Assets/Prmary Logos Black Red/Artboard 7SM logos.png" alt="SM Logo"
+                            style="height: 50px;">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="interactable">Home</a></li>
+                    <li><a href="albums.html" class="interactable">Albums</a></li>
+                    <li><a href="maal.html" class="interactable">Maal</a></li>
+                    <li><a href="smfc.html" class="interactable">SMFC</a></li>
+                    <li><a href="tour.html" class="interactable">Tour</a></li>
+                </ul>
+                <div class="nav-right">
+                    <button class="icon-btn focus-search interactable"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href="cart.html" class="icon-btn interactable"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <button class="icon-btn interactable menu-trigger"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="product-detail-container container">
+            <div class="breadcrumb">
+                <a href="index.html" class="interactable">Home</a> /
+                <a href="maal.html" class="interactable">Maal</a> /
+                <span id="breadcrumb-category">Category</span>
+            </div>
+
+            <div class="product-flex">
+                <div class="product-gallery">
+                    <div class="glass-card" style="padding: 20px; border-radius: 40px;">
+                        <img id="product-image" src="" alt="Product" class="product-main-img">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <div class="detail-card">
+                        <h1 id="product-name" class="maut-font" style="font-size: 48px; margin: 0;">Product Name</h1>
+                        <p class="product-price" id="product-price">₹0.00</p>
+                        <div class="product-description" id="product-description">
+                            Loading official description...
+                        </div>
+
+                        <div class="size-selector" style="margin: 30px 0;">
+                            <h4 style="margin-bottom: 15px;">SELECT SIZE</h4>
+                            <div style="display: flex; gap: 10px;">
+                                <button class="filter-btn interactable"
+                                    style="padding: 10px 20px; border: 1px solid rgba(255,255,255,0.1);">S</button>
+                                <button class="filter-btn interactable"
+                                    style="padding: 10px 20px; border: 1px solid rgba(255,255,255,0.1);">M</button>
+                                <button class="filter-btn active interactable" style="padding: 10px 20px;">L</button>
+                                <button class="filter-btn interactable"
+                                    style="padding: 10px 20px; border: 1px solid rgba(255,255,255,0.1);">XL</button>
+                            </div>
+                        </div>
+
+                        <button class="add-to-cart-btn magnetic interactable">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://open.spotify.com/artist/2oBG74gAocPMFv6Ij9ykdo" target="_blank" class="interactable"><i
+                        class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.instagram.com/seedhemaut/" target="_blank" class="interactable"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@SeedheMaut" target="_blank" class="interactable"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://m.facebook.com/SeedheMaut/" target="_blank" class="interactable"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/SeedheMaut" target="_blank" class="interactable"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p>&copy; 2024 Seedhe Maut. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+
+        // Product detail page logic
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+
+        if (!productId) {
+            window.location.href = 'maal.html';
+        } else {
+            (async () => {
+                try {
+                    const response = await fetch('products.json');
+                    const products = await response.json();
+                    const product = products.find(p => p.id === productId);
+
+                    if (product) {
+                        document.title = `${product.name} | Seedhe Maut`;
+                        document.getElementById('product-name').textContent = product.name;
+                        document.getElementById('product-price').textContent = `₹${product.price} Excl GST`;
+                        document.getElementById('product-description').textContent = product.description;
+                        document.getElementById('product-image').src = product.image;
+                        document.getElementById('breadcrumb-category').textContent = product.category;
+
+                        document.querySelector('.add-to-cart-btn').addEventListener('click', () => {
+                            if (window.addToCart) {
+                                window.addToCart(product.id, product.name, parseFloat(product.price), product.image);
+                            } else {
+                                // Fallback
+                                const cart = JSON.parse(localStorage.getItem('sm_cart') || '[]');
+                                cart.push({ id: product.id, name: product.name, price: parseFloat(product.price), image: product.image, quantity: 1 });
+                                localStorage.setItem('sm_cart', JSON.stringify(cart));
+                                alert(product.name + " added to cart!");
+                            }
+                        });
+                    } else {
+                        window.location.href = 'maal.html';
+                    }
+                } catch (error) {
+                    console.error('Error loading product:', error);
+                }
+            })();
+        }
+    </script>
+</body>
+
+</html>

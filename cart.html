@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Seedhe Maut</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+    <div class="bg-glow"></div>
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html" class="interactable">
+                        <img src="Assets/Prmary Logos Black Red/Artboard 7SM logos.png" alt="SM Logo"
+                            style="height: 50px;">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="interactable">Home</a></li>
+                    <li><a href="albums.html" class="interactable">Albums</a></li>
+                    <li><a href="maal.html" class="interactable">Maal</a></li>
+                    <li><a href="smfc.html" class="interactable">SMFC</a></li>
+                    <li><a href="tour.html" class="interactable">Tour</a></li>
+                </ul>
+                <div class="nav-right">
+                    <a href="cart.html" class="icon-btn interactable active"><i
+                            class="fa-solid fa-cart-shopping"></i></a>
+                    <button class="icon-btn interactable menu-trigger"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-section reveal active">
+            <div class="container">
+                <h1 class="maut-font" style="font-size: 64px; margin-bottom: 40px;">Your Collection</h1>
+
+                <div class="cart-container">
+                    <div class="cart-items">
+                        <!-- Items injected by main.js -->
+                        <div class="loader-container">
+                            <div class="maut-font">Opening your vault...</div>
+                        </div>
+                    </div>
+
+                    <div class="cart-summary glass-card">
+                        <h2 class="maut-font">Summary</h2>
+                        <div class="summary-line">
+                            <span>Subtotal</span>
+                            <span>₹0</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Shipping</span>
+                            <span style="color: var(--primary-red);">FREE</span>
+                        </div>
+                        <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 20px 0;">
+                        <div class="summary-line total">
+                            <span>Total</span>
+                            <span>₹0</span>
+                        </div>
+                        <button class="checkout-btn interactable">Proceed to Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="social-links">
+                    <a href="https://open.spotify.com/artist/2oBG74gAocPMFv6Ij9ykdo" target="_blank"
+                        class="interactable"><i class="fa-brands fa-spotify"></i></a>
+                    <a href="https://www.instagram.com/seedhemaut/" target="_blank" class="interactable"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@SeedheMaut" target="_blank" class="interactable"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="https://m.facebook.com/SeedheMaut/" target="_blank" class="interactable"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/SeedheMaut" target="_blank" class="interactable"><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://on.soundcloud.com/Hy07s4dzb5fO7LDIjN" target="_blank" class="interactable"><i
+                            class="fa-brands fa-soundcloud"></i></a>
+                </div>
+                <p>&copy; 2024 Seedhe Maut. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Auth Modal -->
+        <div id="auth-modal" class="modal">
+            <div class="modal-content glass">
+                <span class="close-modal interactable">&times;</span>
+                <h2 class="maut-font">Join the Vault</h2>
+                <p>Access exclusive drops and early ticket access</p>
+                <div class="auth-buttons">
+                    <button class="auth-btn discord-btn interactable">
+                        <i class="fa-brands fa-discord"></i>
+                        <span>Connect with Discord</span>
+                    </button>
+                    <button class="auth-btn google-btn interactable">
+                        <i class="fa-brands fa-google"></i>
+                        <span>Continue with Google</span>
+                    </button>
+                    <button class="auth-btn spotify-btn interactable">
+                        <i class="fa-brands fa-spotify"></i>
+                        <span>Sync with Spotify</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="burger-menu-overlay glass">
+            <span class="close-menu interactable">&times;</span>
+            <ul class="burger-links">
+                <li><a href="index.html" class="interactable maut-font">Home</a></li>
+                <li><a href="albums.html" class="interactable maut-font">Albums</a></li>
+                <li><a href="maal.html" class="interactable maut-font">Maal</a></li>
+                <li><a href="smfc.html" class="interactable maut-font">SMFC</a></li>
+                <li><a href="tour.html" class="interactable maut-font">Tour</a></li>
+                <li><a href="cart.html" class="interactable maut-font">Cart</a></li>
+                <li><a href="#" class="login-trigger interactable maut-font">Vault Login</a></li>
+            </ul>
+        </div>
+
+        <script src="main.js"></script>
+</body>
+
+</html>

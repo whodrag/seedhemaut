@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seedhe Maut | A Place for Every Soul</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+    <div class="bg-glow"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="glitch-logo">
+                <img src="Assets/Prmary Logos Black Red/Artboard 7SM logos.png" alt="SM Logo" class="loader-logo">
+            </div>
+            <div class="loader-progress-bar">
+                <div class="loader-progress-fill"></div>
+            </div>
+            <div class="loader-text maut-font">BLOODLINE SYNCING...</div>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html" class="interactable">
+                        <img src="Assets/Prmary Logos Black Red/Artboard 7SM logos.png" alt="SM Logo"
+                            style="height: 50px;">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active interactable">Home</a></li>
+                    <li><a href="albums.html" class="interactable">Albums</a></li>
+                    <li><a href="maal.html" class="interactable">Maal</a></li>
+                    <li><a href="smfc.html" class="interactable">SMFC</a></li>
+                    <li><a href="tour.html" class="interactable">Tour</a></li>
+                    <li><a href="#" class="login-trigger magnetic interactable">Login</a></li>
+                </ul>
+                <div class="nav-right">
+                    <button class="icon-btn focus-search interactable"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href="cart.html" class="icon-btn interactable"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <button class="icon-btn interactable menu-trigger"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero cinematic-hero">
+            <div class="hero-visual-container">
+                <img src="Assets/SMFC/SM-1.jpg-2048x1365.jpeg" alt="Seedhe Maut" class="hero-visual-img">
+                <div class="hero-vignette"></div>
+                <div class="hero-edge-fade"></div>
+            </div>
+
+            <div class="container hero-content">
+                <h1 class="maut-font reveal-clip">SEEDHE MAUT</h1>
+                <p class="hero-subtitle">THE NEW ERA OF INDIAN HIP-HOP</p>
+                <div class="search-container magnetic interactable">
+                    <input type="text" placeholder="Search for a song...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <!-- UX: Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span>EXPLORE</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Featured Albums Carousel (Floating) -->
+        <div class="container carousel-wrapper">
+            <div class="featured-carousel">
+                <div class="album-card glass-card">
+                    <img src="Assets/Album Art Work/Nayaab - 2022.jpg" alt="Nayaab" loading="lazy" decoding="async">
+                    <div class="play-overlay">
+                        <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                </div>
+                <div class="album-card glass-card">
+                    <img src="Assets/Album Art Work/Bayaan - 2018.jpg" alt="Bayaan" loading="lazy" decoding="async">
+                    <div class="play-overlay">
+                        <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                </div>
+                <div class="album-card glass-card">
+                    <img src="Assets/Album Art Work/Lunch Break - 2023.jpg" alt="Lunch Break" loading="lazy"
+                        decoding="async">
+                    <div class="play-overlay">
+                        <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                </div>
+                <div class="album-card glass-card">
+                    <img src="Assets/Album Art Work/SHAKTI - 2024.jpeg" alt="Shakti" loading="lazy" decoding="async">
+                    <div class="play-overlay">
+                        <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                </div>
+                <div class="album-card glass-card">
+                    <img src="Assets/Album Art Work/101 - 2019.jpg" alt="101" loading="lazy" decoding="async">
+                    <div class="play-overlay">
+                        <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Music Section -->
+        <section class="music-section">
+            <div class="container music-player">
+                <ul class="filter-tabs">
+                    <li class="active">Most Listen</li>
+                    <li>Trending</li>
+                    <li>Collab</li>
+                    <li>Latest</li>
+                    <li>Oldest</li>
+                </ul>
+
+                <div class="music-grid">
+                    <div class="music-item">
+                        <div class="music-img-container glass-card">
+                            <img src="Assets/Album Art Work/Kshama -2024.jpeg" alt="Raat Ki Rani" loading="lazy"
+                                decoding="async">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Kshama</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item">
+                        <div class="music-img-container glass-card">
+                            <img src="Assets/Album Art Work/Namastute - 2021.jpg" alt="Namastute" loading="lazy"
+                                decoding="async">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Namastute</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item">
+                        <div class="music-img-container glass-card">
+                            <img src="Assets/Album Art Work/Nanchaku.jpg" alt="Nanchaku" loading="lazy"
+                                decoding="async">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Nanchaku</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item">
+                        <div class="music-img-container glass-card">
+                            <img src="Assets/Album Art Work/Lunch Break - 2023.jpg" alt="Lunch Break" loading="lazy"
+                                decoding="async">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Lunch Break</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Albums Section -->
+        <section class="albums">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="maut-font reveal-clip">Discography</h2>
+                    <a href="albums.html" class="view-all interactable">Show all</a>
+                </div>
+                <div class="accordion-container">
+                    <!-- DL91 FM -->
+                    <div class="accordion-panel active interactable">
+                        <img src="Assets/Album Art Work/Dl91 fm - 2025.jpeg" alt="DL91 FM">
+                        <div class="accordion-content">
+                            <p>EP • 2025</p>
+                            <h3 class="maut-font">DL91 FM</h3>
+                            <a href="https://open.spotify.com/album/43Yc4aM3JvQJdM4p1j4Z3F" target="_blank"
+                                class="spotify-link interactable">
+                                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Kshama -->
+                    <div class="accordion-panel interactable">
+                        <img src="Assets/Album Art Work/Kshama -2024.jpeg" alt="Kshama">
+                        <div class="accordion-content">
+                            <p>EP • 2025</p>
+                            <h3 class="maut-font">Kshama</h3>
+                            <a href="https://open.spotify.com/album/7r1S8oR38Q1e5y5Q8p8X7B" target="_blank"
+                                class="spotify-link interactable">
+                                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Shakti -->
+                    <div class="accordion-panel interactable">
+                        <img src="Assets/Album Art Work/SHAKTI - 2024.jpeg" alt="Shakti">
+                        <div class="accordion-content">
+                            <p>EP • 2024</p>
+                            <h3 class="maut-font">SHAKTI</h3>
+                            <a href="https://open.spotify.com/album/43Yc4aM3JvQJdM4p1j4Z3F" target="_blank"
+                                class="spotify-link interactable">
+                                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Lunch Break -->
+                    <div class="accordion-panel interactable">
+                        <img src="Assets/Album Art Work/Lunch Break - 2023.jpg" alt="Lunch Break">
+                        <div class="accordion-content">
+                            <p>Mixtape • 2023</p>
+                            <h3 class="maut-font">Lunch Break</h3>
+                            <a href="https://open.spotify.com/album/1bHND2FIsU6vC3J3C3X1X8" target="_blank"
+                                class="spotify-link interactable">
+                                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Nayaab -->
+                    <div class="accordion-panel interactable">
+                        <img src="Assets/Album Art Work/Nayaab - 2022.jpg" alt="Nayaab">
+                        <div class="accordion-content">
+                            <p>Album • 2022</p>
+                            <h3 class="maut-font">Nayaab</h3>
+                            <a href="https://open.spotify.com/album/5bRRzI1xuiNAAjdSCg5bnO" target="_blank"
+                                class="spotify-link interactable">
+                                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Na -->
+                    <div class="accordion-panel interactable">
+                        <img src="Assets/Album Art Work/न (Na) - 2021.jpg" alt="Na">
+                        <div class="accordion-content">
+                            <p>EP • 2021</p>
+                            <h3 class="maut-font">न (Na)</h3>
+                            <a href="https://open.spotify.com/album/43Yc4aM3JvQJdM4p1j4Z3F" target="_blank"
+                                class="spotify-link interactable">
+                                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Bayaan -->
+                    <div class="accordion-panel interactable">
+                        <img src="Assets/Album Art Work/Bayaan - 2018.jpg" alt="Bayaan">
+                        <div class="accordion-content">
+                            <p>Album • 2018</p>
+                            <h3 class="maut-font">Bayaan</h3>
+                            <a href="https://open.spotify.com/album/4vS7DqC099mK6WvY4p4H2m" target="_blank"
+                                class="spotify-link interactable">
+                                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tour Section -->
+        <section class="tour">
+            <div class="container">
+                <h2 class="maut-font section-title reveal-clip">SMX WORLD TOUR</h2>
+                <div class="tour-banner glass-card">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=2000"
+                        alt="Concert" style="filter: grayscale(1) contrast(1.2);">
+                    <div class="tour-overlay">
+                        <h1 class="maut-font">SMX WORLD TOUR</h1>
+                        <div class="tour-cities">
+                            <div class="city-card glass" style="--delay: 0">
+                                <h3>Singapore</h3>
+                                <p>Apr 01, 2024</p>
+                            </div>
+                            <div class="city-card glass" style="--delay: 2">
+                                <h3>Amsterdam</h3>
+                                <p>May 15, 2024</p>
+                            </div>
+                            <div class="city-card glass" style="--delay: 4">
+                                <h3>New York</h3>
+                                <p>June 04, 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tickets Section -->
+        <section id="tour" class="tickets">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="maut-font reveal-clip">GET TICKETS</h2>
+                    <a href="tour.html" class="view-all interactable">View all cities</a>
+                </div>
+                <div class="tickets-grid">
+                    <div class="ticket-item glass-card">
+                        <div class="ticket-info">
+                            <h3>Singapore</h3>
+                            <p>01 April 2024</p>
+                        </div>
+                        <button class="buy-btn magnetic interactable">₹2499 onwards</button>
+                    </div>
+                    <div class="ticket-item glass-card">
+                        <div class="ticket-info">
+                            <h3>Melbourne</h3>
+                            <p>03 April 2024</p>
+                        </div>
+                        <button class="buy-btn magnetic interactable">₹2499 onwards</button>
+                    </div>
+                    <div class="ticket-item glass-card">
+                        <div class="ticket-info">
+                            <h3>London</h3>
+                            <p>29 May 2024</p>
+                        </div>
+                        <button class="buy-btn magnetic interactable">₹3499 onwards</button>
+                    </div>
+                    <div class="ticket-item glass-card">
+                        <div class="ticket-info">
+                            <h3>Los Angeles</h3>
+                            <p>18 June 2024</p>
+                        </div>
+                        <button class="buy-btn magnetic interactable">₹4499 onwards</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maal Section -->
+        <section class="collection">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="maut-font reveal-clip">Official Maal</h2>
+                    <a href="maal.html" class="view-all interactable">View all Maal</a>
+                </div>
+                <div class="music-grid">
+                    <div class="merch-item">
+                        <div class="merch-img-container glass-card interactable">
+                            <img src="Assets/Maal/SMX/SMX 2025 TOUR T-SHIRT (SMTS-007).png" alt="SMX 2025 TOUR T-SHIRT">
+                        </div>
+                        <h4>SMX 2025 TOUR T-SHIRT</h4>
+                        <p>₹1,899.00 Excl GST</p>
+                    </div>
+                    <div class="merch-item">
+                        <div class="merch-img-container glass-card interactable">
+                            <img src="Assets/Maal/SMX/SMX ACID WASHED TOUR T-SHIRT (SMTS-008).png"
+                                alt="SMX ACID WASHED">
+                        </div>
+                        <h4>SMX ACID WASHED TOUR T-SHIRT</h4>
+                        <p>₹1,899.00 Excl GST</p>
+                    </div>
+                    <div class="merch-item">
+                        <div class="merch-img-container glass-card interactable">
+                            <img src="Assets/Maal/SMX/SMX PATTERN T-SHIRT (SMTS-005).png" alt="SMX PATTERN T-SHIRT">
+                        </div>
+                        <h4>SMX PATTERN T-SHIRT</h4>
+                        <p>₹1,899.00 Excl GST</p>
+                    </div>
+                    <div class="merch-item">
+                        <div class="merch-img-container glass-card interactable">
+                            <img src="Assets/Maal/SMX/SMX PATTERN POLO SHIRT (SMTS-006).png" alt="SMX POLO">
+                        </div>
+                        <h4>SMX PATTERN POLO SHIRT</h4>
+                        <p>₹1,899.00 Excl GST</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://open.spotify.com/artist/2oBG74gAocPMFv6Ij9ykdo" target="_blank" class="interactable"><i
+                        class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.instagram.com/seedhemaut/" target="_blank" class="interactable"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@SeedheMaut" target="_blank" class="interactable"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://m.facebook.com/SeedheMaut/" target="_blank" class="interactable"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/SeedheMaut" target="_blank" class="interactable"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://on.soundcloud.com/Hy07s4dzb5fO7LDIjN" target="_blank" class="interactable"><i
+                        class="fa-brands fa-soundcloud"></i></a>
+            </div>
+            <p>&copy; 2024 Seedhe Maut. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-modal interactable">&times;</span>
+            <h2 class="maut-font">Join the Vault</h2>
+            <p>Access exclusive drops and early ticket access</p>
+            <div class="auth-buttons">
+                <button class="auth-btn discord-btn interactable">
+                    <i class="fa-brands fa-discord"></i>
+                    <span>Connect with Discord</span>
+                </button>
+                <button class="auth-btn google-btn interactable">
+                    <i class="fa-brands fa-google"></i>
+                    <span>Continue with Google</span>
+                </button>
+                <button class="auth-btn spotify-btn interactable">
+                    <i class="fa-brands fa-spotify"></i>
+                    <span>Sync with Spotify</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Player Controls Fixed -->
+    <div class="mini-player glass">
+        <div class="player-info">
+            <img src="Assets/Album Art Work/Kshama -2024.jpeg" alt="Now Playing">
+            <div>
+                <h4>Kshama</h4>
+                <p>Seedhe Maut</p>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button class="interactable"><i class="fa-solid fa-backward-step"></i></button>
+            <button class="play-pause interactable"><i class="fa-solid fa-play"></i></button>
+            <button class="interactable"><i class="fa-solid fa-forward-step"></i></button>
+        </div>
+        <div class="player-progress">
+            <span class="time">1:24</span>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <span class="time">3:45</span>
+        </div>
+    </div>
+
+    <div class="burger-menu-overlay glass">
+        <span class="close-menu interactable">&times;</span>
+        <ul class="burger-links">
+            <li><a href="index.html" class="interactable maut-font">Home</a></li>
+            <li><a href="albums.html" class="interactable maut-font">Albums</a></li>
+            <li><a href="maal.html" class="interactable maut-font">Maal</a></li>
+            <li><a href="smfc.html" class="interactable maut-font">SMFC</a></li>
+            <li><a href="tour.html" class="interactable maut-font">Tour</a></li>
+            <li><a href="cart.html" class="interactable maut-font">Cart</a></li>
+            <li><a href="#" class="login-trigger interactable maut-font">Vault Login</a></li>
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

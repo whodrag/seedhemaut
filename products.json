@@ -1,0 +1,138 @@
+[
+    {
+        "id": "daily-essential-tee",
+        "name": "Daily Essential T-Shirt (SMTS-001)",
+        "category": "core",
+        "price": "999.00",
+        "image": "/Assets/Maal/Core/DAILY ESSENTIAL T-SHIRT (SMTS-001).png",
+        "description": "The foundation of your rotation. Made from premium 100% cotton for a comfortable, everyday fit. Featuring the classic Seedhe Maut logo."
+    },
+    {
+        "id": "danger-11k-volts-tee",
+        "name": "Danger 11K Volts T-Shirt (SMTS-010)",
+        "category": "core",
+        "price": "1,499.00",
+        "image": "/Assets/Maal/Core/DANGER 11K VOLTS T-SHIRT (SMTS-010).png",
+        "description": "High voltage energy. Custom graphic 'Danger 11K Volts' print on a heavyweight cotton boxy-fit tee."
+    },
+    {
+        "id": "iconic-gaming-pad",
+        "name": "Iconic Gaming Pad (SMGP-001) – Limited Edition",
+        "category": "core",
+        "price": "599.00",
+        "image": "/Assets/Maal/Core/ICONIC GAMING PAD (SMGP-001) – LIMITED EDITION.png",
+        "description": "Level up your setup. High-density surface for precision tracking, featuring SMX signature branding."
+    },
+    {
+        "id": "drinks-tumbler",
+        "name": "Drinks Tumbler With Straw (SMDT-001)",
+        "category": "core",
+        "price": "999.00",
+        "image": "/Assets/Maal/Core/DRINKS TUMBLER WITH STRAW (SMDT-001).png",
+        "description": "Stay hydrated during the set. Insulated tumbler with a reusable straw, finished with matte black branding."
+    },
+    {
+        "id": "smx-2025-tour-tee",
+        "name": "SMX 2025 Tour T-Shirt (SMTS-007)",
+        "category": "smx",
+        "price": "1,899.00",
+        "image": "/Assets/Maal/SMX/SMX 2025 TOUR T-SHIRT (SMTS-007).png",
+        "description": "Official SMX World Tour merchandise. Features full tour dates and exclusive artwork on a charcoal washed heavyweight tee."
+    },
+    {
+        "id": "smx-acid-washed-tee",
+        "name": "SMX Acid Washed Tour T-Shirt (SMTS-008)",
+        "category": "smx",
+        "price": "1,899.00",
+        "image": "/Assets/Maal/SMX/SMX ACID WASHED TOUR T-SHIRT (SMTS-008).png",
+        "description": "Vintage look, modern performance. Acid-washed finish with distressed tour graphics for a lived-in feel."
+    },
+    {
+        "id": "smx-pattern-tee",
+        "name": "SMX Pattern T-Shirt (SMTS-005)",
+        "category": "smx",
+        "price": "1,899.00",
+        "image": "/Assets/Maal/SMX/SMX PATTERN T-SHIRT (SMTS-005).png",
+        "description": "All-over SMX monogram pattern. Premium sublimation print on a breathable cotton-blend fabric."
+    },
+    {
+        "id": "smx-polo",
+        "name": "SMX Pattern Polo Shirt (SMTS-006)",
+        "category": "smx",
+        "price": "1,899.00",
+        "image": "/Assets/Maal/SMX/SMX PATTERN POLO SHIRT (SMTS-006).png",
+        "description": "Sophisticated street gear. SMX monogram collar and chest embroidery on a custom-knit polo."
+    },
+    {
+        "id": "smx-mask",
+        "name": "SMX Limited Edition Mask / Snood (SMSN-002)",
+        "category": "smx",
+        "price": "350.00",
+        "image": "/Assets/Maal/SMX/SMX LIMITED EDITION MASK  SNOOD (SMSN-002).png",
+        "description": "Multi-functional performance gear. Can be worn as a mask, neck gaiter, or headband. High-stretch moisture-wicking fabric."
+    },
+    {
+        "id": "smx-bandana",
+        "name": "SMX Pattern Silk Bandana (SMBD-001)",
+        "category": "smx",
+        "price": "599.00",
+        "image": "/Assets/Maal/SMX/SMX PATTERN SILK BANDANA (SMBD-001).png",
+        "description": "Luxury finish. 100% silk bandana with intricate SMX pattern. Perfect for your hair, neck, or kit."
+    },
+    {
+        "id": "bayaan-signed-vinyl",
+        "name": "Bayaan 12″ Picture Disk Signed Vinyl (SMVI-002)",
+        "category": "vinyls",
+        "price": "3,499.00",
+        "image": "/Assets/Maal/Vinyls/BAYAAN 12″ PICTURE DISK SIGNED VINYL (SMVI-002).png",
+        "description": "The classic that started it all. Limited edition picture disk signed by Encore ABJ and Calm. Features full album artwork."
+    },
+    {
+        "id": "nayaab-signed-vinyl",
+        "name": "Nayaab 12″ Picture Disk Signed Vinyl (SMVI-004)",
+        "category": "vinyls",
+        "price": "5,999.00",
+        "image": "/Assets/Maal/Vinyls/NAYAAB 12″ PICTURE DISK SIGNED VINYL (SMVI-004).png",
+        "description": "The magnum opus. Ultra-limited picture disk signed by the duo. A True masterpiece for the collection."
+    },
+    {
+        "id": "smfc-jersey-encore",
+        "name": "Jersey Top - Encore",
+        "category": "smfc",
+        "price": "1,999.00",
+        "image": "/Assets/Maal/SMFC/2-1.png.jpeg",
+        "description": "Official SMFC Performance Kit. 'Encore' edition with custom player number and breathable mesh panels."
+    },
+    {
+        "id": "smfc-jersey-calm",
+        "name": "Jersey Top - Calm",
+        "category": "smfc",
+        "price": "1,999.00",
+        "image": "/Assets/Maal/SMFC/3-2.png.jpeg",
+        "description": "Official SMFC Performance Kit. 'Calm' edition featuring specialized cooling tech and the signature SMFC crest."
+    },
+    {
+        "id": "smfc-football",
+        "name": "TBSM Official Football",
+        "category": "smfc",
+        "price": "1,500.00",
+        "image": "/Assets/Maal/SMFC/7-1.png.jpeg",
+        "description": "Match-ready. Professional grade football with TBSM signature branding and high-retention bladder."
+    },
+    {
+        "id": "into-battle-print",
+        "name": "Into Battle 2025 – A2 Art Print (SMPR-001)",
+        "category": "prints",
+        "price": "1,250.00",
+        "image": "/Assets/Maal/Prints/INTO BATTLE 2025 – A2 ART PRINT (SMPR-001).png",
+        "description": "Limited edition tour art. Printed on 300gsm metallic finish paper. A piece of tour history for your walls."
+    },
+    {
+        "id": "sm-wallpapers",
+        "name": "Official Seedhe Maut Wallpapers",
+        "category": "downloads",
+        "price": "0.00",
+        "image": "/Assets/Maal/Downloads/OFFICAL SEEDHE MAUT WALLPAPERS.png",
+        "description": "Equip your digital devices with high-res SM artwork. Perfect for desktop and mobile."
+    }
+]

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMFC Drops | Seedhe Maut</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+    <div class="bg-glow"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="glitch-logo">
+                <img src="Assets/Prmary Logos Black Red/Artboard 7SM logos.png" alt="SM Logo" class="loader-logo">
+            </div>
+            <div class="loader-progress-bar">
+                <div class="loader-progress-fill"></div>
+            </div>
+            <div class="loader-text maut-font">SYNCING SMFC...</div>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html" class="interactable">
+                        <img src="Assets/Prmary Logos Black Red/Artboard 7SM logos.png" alt="SM Logo"
+                            style="height: 50px;">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="interactable">Home</a></li>
+                    <li><a href="albums.html" class="interactable">Albums</a></li>
+                    <li><a href="maal.html" class="active interactable">Maal</a></li>
+                    <li><a href="smfc.html" class="interactable">SMFC</a></li>
+                    <li><a href="tour.html" class="interactable">Tour</a></li>
+                </ul>
+                <div class="nav-right">
+                    <button class="icon-btn focus-search interactable"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href="cart.html" class="icon-btn interactable"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <button class="icon-btn interactable menu-trigger"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Subpage Banner -->
+        <section class="page-banner" style="height: 40vh; min-height: 300px;">
+            <div class="hero-visual-container">
+                <img src="Assets/Maal/SMFC/2-1.png.jpeg" class="hero-visual-img" alt="Banner"
+                    style="object-position: top; opacity: 0.4;">
+                <div class="hero-vignette"></div>
+            </div>
+            <div class="container" style="position: relative; z-index: 10;">
+                <h1 class="maut-font reveal-clip" style="font-size: clamp(40px, 8vw, 100px);">SMFC</h1>
+                <p class="hero-subtitle" style="margin-top: 10px; opacity: 0.6;">OFFICIAL FAN CLUB EXCLUSIVES</p>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="collection" style="padding: 100px 0;">
+            <div class="container">
+                <div class="music-grid" id="product-grid">
+                    <!-- Loaded dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://open.spotify.com/artist/2oBG74gAocPMFv6Ij9ykdo" target="_blank" class="interactable"><i
+                        class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.instagram.com/seedhemaut/" target="_blank" class="interactable"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@SeedheMaut" target="_blank" class="interactable"><i
+                        class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2024 Seedhe Maut. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-modal interactable">&times;</span>
+            <h2 class="maut-font">Join the Vault</h2>
+            <div class="auth-buttons">
+                <button class="auth-btn discord-btn interactable">Discord</button>
+                <button class="auth-btn google-btn interactable">Google</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="burger-menu-overlay glass">
+        <span class="close-menu interactable">&times;</span>
+        <ul class="burger-links">
+            <li><a href="index.html" class="interactable">Home</a></li>
+            <li><a href="albums.html" class="interactable">Albums</a></li>
+            <li><a href="maal.html" class="interactable">Maal</a></li>
+            <li><a href="smfc.html" class="interactable">SMFC</a></li>
+            <li><a href="tour.html" class="interactable">Tour</a></li>
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('products.json');
+                const products = await response.json();
+                const filtered = products.filter(p => p.category === 'smfc');
+
+                const grid = document.getElementById('product-grid');
+                grid.innerHTML = filtered.map((product, index) => `
+                    <div class="merch-item reveal" style="transition-delay: ${index * 0.1}s">
+                        <a href="product-detail.html?id=${product.id}" class="interactable" style="text-decoration: none; color: inherit;">
+                            <div class="merch-img-container glass-card">
+                                <img src="${product.image}" alt="${product.name}">
+                            </div>
+                            <h4 style="margin-top: 20px; font-size: 18px;">${product.name}</h4>
+                            <p style="color: var(--primary-red); font-weight: 700; margin-top: 5px;">₹${product.price}</p>
+                        </a>
+                    </div>
+                `).join('');
+
+                if (typeof bindCartButtons === 'function') bindCartButtons();
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+
+</html>

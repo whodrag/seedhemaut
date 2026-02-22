@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albums | Seedhe Maut</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+    <div class="bg-glow"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="glitch-logo">
+                <img src="Assets/Prmary Logos Black Red/Artboard 7SM logos.png" alt="SM Logo" class="loader-logo">
+            </div>
+            <div class="loader-progress-bar">
+                <div class="loader-progress-fill"></div>
+            </div>
+            <div class="loader-text maut-font">BLOODLINE SYNCING...</div>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="index.html" class="interactable">
+                        <img src="Assets/Prmary Logos Black Red/Artboard 7SM logos.png" alt="SM Logo"
+                            style="height: 50px;">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="interactable">Home</a></li>
+                    <li><a href="albums.html" class="active interactable">Albums</a></li>
+                    <li><a href="maal.html" class="interactable">Maal</a></li>
+                    <li><a href="smfc.html" class="interactable">SMFC</a></li>
+                    <li><a href="tour.html" class="interactable">Tour</a></li>
+                    <li><a href="#" class="login-trigger magnetic interactable">Login</a></li>
+                </ul>
+                <div class="nav-right">
+                    <button class="icon-btn focus-search interactable"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <a href="cart.html" class="icon-btn interactable"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <button class="icon-btn interactable menu-trigger"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Albums Banner -->
+        <section class="page-banner">
+            <div class="hero-visual-container">
+                <img src="Assets/SMFC/SM-1.jpg-2048x1365.jpeg" class="hero-visual-img" alt="Albums Banner">
+                <div class="hero-vignette"></div>
+            </div>
+            <h1 class="maut-font reveal-clip">ALBUMS</h1>
+        </section>
+
+        <section class="music-section">
+            <div class="container music-player">
+                <ul class="filter-tabs">
+                    <li class="active interactable" data-filter="most-listen">Most Listen</li>
+                    <li class="interactable" data-filter="trending">Trending</li>
+                    <li class="interactable" data-filter="collab">Collab</li>
+                    <li class="interactable" data-filter="latest">Latest</li>
+                    <li class="interactable" data-filter="oldest">Oldest</li>
+                </ul>
+                <div class="music-grid">
+                    <!-- Most Listen -->
+                    <div class="music-item active" data-category="most-listen">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/Namastute - 2021.jpg" alt="Namastute">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Namastute</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item active" data-category="most-listen">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/Nanchaku.jpg" alt="Nanchaku">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Nanchaku</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item active" data-category="most-listen">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/11K - 2023.jpg" alt="11K">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>11K</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item active" data-category="most-listen">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/Yaad - 2020.jpg" alt="Yaad">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Yaad</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+
+                    <!-- Trending -->
+                    <div class="music-item" data-category="trending">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/SHAKTI - 2024.jpeg" alt="Raat Ki Rani">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Raat Ki Rani</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item" data-category="trending">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/NAMUNA - 2024.jpeg" alt="Namuna">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>NAMUNA</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item" data-category="trending">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/Bure Din - 2024.jpg" alt="Bure Din">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Bure Din</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item" data-category="trending">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/SRK - 2024.jpeg" alt="SRK">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>SRK</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+
+                    <!-- Collab -->
+                    <div class="music-item" data-category="collab">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/Nayaab - 2022.jpg" alt="Khatta Flow">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Khatta Flow (ft. KR$NA)</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item" data-category="collab">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/Lunch Break - 2023.jpg" alt="Hola Amigo">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Hola Amigo (ft. KR$NA)</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item" data-category="collab">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/Class-Sikh, Vol II - 2018.jpg" alt="Class-Sikh Maut">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Class-Sikh Maut (ft. Prabh Deep)</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+
+                    <!-- Latest -->
+                    <div class="music-item" data-category="latest">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/DL91 FM - 2025.jpeg" alt="DL91 FM">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>DL91 FM</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item" data-category="latest">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/Kshama -2024.jpeg" alt="Kshama">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Kshama</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item" data-category="latest">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/SHAKTI - 2024.jpeg" alt="SHAKTI">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>SHAKTI</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+
+                    <!-- Oldest -->
+                    <div class="music-item" data-category="oldest">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/2 Ka Pahada.jpg" alt="2 Ka Pahada">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>2 Ka Pahada</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item" data-category="oldest">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/Bayaan - 2018.jpg" alt="Bayaan">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Bayaan</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item" data-category="oldest">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/Kranti - 2018.jpg" alt="Kranti">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Kranti</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item" data-category="oldest">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/Shaktimaan - 2018.jpg" alt="Shaktimaan">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>Shaktimaan</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                    <div class="music-item" data-category="oldest">
+                        <div class="music-img-container glass-card interactable">
+                            <img src="Assets/Album Art Work/न (Na) - 2021.jpg" alt="Na">
+                            <div class="play-overlay">
+                                <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+                            </div>
+                        </div>
+                        <h3>न (Na)</h3>
+                        <div class="spotify-badge"><i class="fa-brands fa-spotify"></i> Spotify</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="albums">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="maut-font reveal-clip">Discography</h2>
+                </div>
+                <div class="accordion-container">
+                    <!-- DL91 FM -->
+                    <div class="accordion-panel active interactable">
+                        <img src="Assets/Album Art Work/Dl91 fm - 2025.jpeg" alt="DL91 FM">
+                        <div class="accordion-content">
+                            <p>EP • 2025</p>
+                            <h3 class="maut-font">DL91 FM</h3>
+                            <a href="https://open.spotify.com/album/43Yc4aM3JvQJdM4p1j4Z3F" target="_blank"
+                                class="spotify-link interactable">
+                                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Kshama -->
+                    <div class="accordion-panel interactable">
+                        <img src="Assets/Album Art Work/Kshama -2024.jpeg" alt="Kshama">
+                        <div class="accordion-content">
+                            <p>EP • 2025</p>
+                            <h3 class="maut-font">Kshama</h3>
+                            <a href="https://open.spotify.com/album/7r1S8oR38Q1e5y5Q8p8X7B" target="_blank"
+                                class="spotify-link interactable">
+                                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Shakti -->
+                    <div class="accordion-panel interactable">
+                        <img src="Assets/Album Art Work/SHAKTI - 2024.jpeg" alt="Shakti">
+                        <div class="accordion-content">
+                            <p>EP • 2024</p>
+                            <h3 class="maut-font">SHAKTI</h3>
+                            <a href="https://open.spotify.com/album/43Yc4aM3JvQJdM4p1j4Z3F" target="_blank"
+                                class="spotify-link interactable">
+                                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Lunch Break -->
+                    <div class="accordion-panel interactable">
+                        <img src="Assets/Album Art Work/Lunch Break - 2023.jpg" alt="Lunch Break">
+                        <div class="accordion-content">
+                            <p>Mixtape • 2023</p>
+                            <h3 class="maut-font">Lunch Break</h3>
+                            <a href="https://open.spotify.com/album/1bHND2FIsU6vC3J3C3X1X8" target="_blank"
+                                class="spotify-link interactable">
+                                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Nayaab -->
+                    <div class="accordion-panel interactable">
+                        <img src="Assets/Album Art Work/Nayaab - 2022.jpg" alt="Nayaab">
+                        <div class="accordion-content">
+                            <p>Album • 2022</p>
+                            <h3 class="maut-font">Nayaab</h3>
+                            <a href="https://open.spotify.com/album/5bRRzI1xuiNAAjdSCg5bnO" target="_blank"
+                                class="spotify-link interactable">
+                                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Na -->
+                    <div class="accordion-panel interactable">
+                        <img src="Assets/Album Art Work/न (Na) - 2021.jpg" alt="Na">
+                        <div class="accordion-content">
+                            <p>EP • 2021</p>
+                            <h3 class="maut-font">न (Na)</h3>
+                            <a href="https://open.spotify.com/album/43Yc4aM3JvQJdM4p1j4Z3F" target="_blank"
+                                class="spotify-link interactable">
+                                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Bayaan -->
+                    <div class="accordion-panel interactable">
+                        <img src="Assets/Album Art Work/Bayaan - 2018.jpg" alt="Bayaan">
+                        <div class="accordion-content">
+                            <p>Album • 2018</p>
+                            <h3 class="maut-font">Bayaan</h3>
+                            <a href="https://open.spotify.com/album/6uV9w848aIyg1tQf89NlFp" target="_blank"
+                                class="spotify-link interactable">
+                                <i class="fa-brands fa-spotify"></i> Listen on Spotify
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://open.spotify.com/artist/2oBG74gAocPMFv6Ij9ykdo" target="_blank" class="interactable"><i
+                        class="fa-brands fa-spotify"></i></a>
+                <a href="https://www.instagram.com/seedhemaut/" target="_blank" class="interactable"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@SeedheMaut" target="_blank" class="interactable"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://m.facebook.com/SeedheMaut/" target="_blank" class="interactable"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/SeedheMaut" target="_blank" class="interactable"><i
+                        class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://on.soundcloud.com/Hy07s4dzb5fO7LDIjN" target="_blank" class="interactable"><i
+                        class="fa-brands fa-soundcloud"></i></a>
+            </div>
+            <p>&copy; 2024 Seedhe Maut. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-modal interactable">&times;</span>
+            <h2 class="maut-font">Join the Vault</h2>
+            <p>Access exclusive drops and early ticket access</p>
+            <div class="auth-buttons">
+                <button class="auth-btn discord-btn interactable">
+                    <i class="fa-brands fa-discord"></i>
+                    <span>Connect with Discord</span>
+                </button>
+                <button class="auth-btn google-btn interactable">
+                    <i class="fa-brands fa-google"></i>
+                    <span>Continue with Google</span>
+                </button>
+                <button class="auth-btn spotify-btn interactable">
+                    <i class="fa-brands fa-spotify"></i>
+                    <span>Sync with Spotify</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="burger-menu-overlay glass">
+        <span class="close-menu interactable">&times;</span>
+        <ul class="burger-links">
+            <li><a href="index.html" class="interactable maut-font">Home</a></li>
+            <li><a href="albums.html" class="interactable maut-font">Albums</a></li>
+            <li><a href="maal.html" class="interactable maut-font">Maal</a></li>
+            <li><a href="smfc.html" class="interactable maut-font">SMFC</a></li>
+            <li><a href="tour.html" class="interactable maut-font">Tour</a></li>
+            <li><a href="cart.html" class="interactable maut-font">Cart</a></li>
+            <li><a href="#" class="login-trigger interactable maut-font">Vault Login</a></li>
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

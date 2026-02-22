@@ -1,0 +1,308 @@
+/* SMFC Page Styles - Ultra Modern & Aesthetic */
+.smfc-hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.smfc-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(0.4) saturate(1.2) contrast(1.1);
+}
+
+/* Gradient Overlay for Video */
+.smfc-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(5, 5, 5, 0.4) 0%,
+            transparent 50%,
+            var(--bg-black) 100%);
+    pointer-events: none;
+}
+
+.smfc-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.smfc-hero-content h1 {
+    font-size: clamp(80px, 25vw, 280px);
+    line-height: 0.8;
+    letter-spacing: -10px;
+    margin-bottom: 30px;
+    background: linear-gradient(180deg, #fff 0%, var(--primary-red) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 20px 50px rgba(217, 29, 28, 0.3));
+    animation: hero-reveal 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes hero-reveal {
+    from {
+        opacity: 0;
+        transform: translateY(100px) scale(0.9);
+        filter: blur(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+.smfc-hero-content p {
+    font-size: 18px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    color: var(--text-white);
+    opacity: 0.8;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+/* Premium CTA Button */
+.cta-btn {
+    position: relative;
+    padding: 22px 50px;
+    font-size: 14px;
+    background: var(--primary-red);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 10px 40px rgba(217, 29, 28, 0.4);
+    cursor: none;
+    overflow: hidden;
+}
+
+.cta-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0%;
+    height: 100%;
+    background: white;
+    transform: translate(-50%, -50%) skewX(-15deg);
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.cta-btn:hover {
+    color: black;
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(217, 29, 28, 0.6);
+}
+
+.cta-btn:hover::before {
+    width: 120%;
+}
+
+/* Asymmetrical Intro Section */
+.smfc-intro {
+    padding: 200px 0;
+    position: relative;
+}
+
+.smfc-intro::before {
+    content: 'VAULT';
+    position: absolute;
+    top: 100px;
+    right: -5%;
+    font-size: 30vw;
+    font-family: 'KinetikaMaut-Ultra';
+    color: rgba(255, 255, 255, 0.02);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.smfc-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+    align-items: flex-end;
+    margin-bottom: 150px;
+}
+
+.smfc-text h2 {
+    font-size: 100px;
+    line-height: 0.9;
+    margin-bottom: 40px;
+    letter-spacing: -4px;
+}
+
+.smfc-text p {
+    font-size: 22px;
+    line-height: 1.6;
+    color: var(--text-gray);
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+/* Modern Showcase Grid */
+.smfc-showcase {
+    display: flex;
+    gap: 20px;
+    height: 800px;
+}
+
+.showcase-item {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: flex 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: none;
+}
+
+.showcase-item:hover {
+    flex: 2.5;
+}
+
+.showcase-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(1) brightness(0.6);
+    transition: all 0.8s ease;
+}
+
+.showcase-item:hover img {
+    filter: grayscale(0) brightness(1);
+    transform: scale(1.05);
+}
+
+/* Premium Merch Grid */
+.smfc-drops {
+    padding: 150px 0;
+    background: linear-gradient(to bottom, var(--bg-black), #0a0a0a);
+}
+
+.merch-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.merch-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 0;
+    padding: 0;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+}
+
+.merch-card:hover {
+    border-color: var(--primary-red);
+    background: rgba(217, 29, 28, 0.03);
+    transform: translateY(-15px);
+}
+
+.merch-card img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.merch-info {
+    padding: 40px;
+    text-align: center;
+}
+
+.merch-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--primary-red);
+    margin-bottom: 20px;
+    display: block;
+    font-weight: 800;
+}
+
+.merch-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-gray);
+    margin-bottom: 30px;
+}
+
+/* CTA Footer Section */
+.smfc-cta {
+    padding: 250px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.smfc-cta h2 {
+    font-size: clamp(60px, 12vw, 200px);
+    line-height: 0.8;
+    letter-spacing: -10px;
+}
+
+.cta-sub {
+    font-size: 24px;
+    color: var(--primary-red);
+    margin-bottom: 60px;
+    font-weight: 800;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 1024px) {
+    .smfc-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .merch-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .smfc-showcase {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .showcase-item {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .merch-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .smfc-text h2 {
+        font-size: 60px;
+    }
+}
